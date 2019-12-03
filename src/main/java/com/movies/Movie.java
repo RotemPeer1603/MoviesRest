@@ -1,13 +1,13 @@
 package com.movies;
 
-import java.util.List;
-
 public class Movie {
 
+	private int id;
 	private String name;
-	private String imageName;
+	private String description;
+	private String imageUrl;
 	private int score;
-	private List<String> lstActors;
+	private String actors;
 
 	public String getName() {
 		return name;
@@ -15,14 +15,6 @@ public class Movie {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getImageName() {
-		return imageName;
-	}
-
-	public void setImageName(String imageName) {
-		this.imageName = imageName;
 	}
 
 	public int getScore() {
@@ -33,12 +25,37 @@ public class Movie {
 		this.score = score;
 	}
 
-	public List<String> getLstActors() {
-		return lstActors;
+	public int getId() {
+		return id;
 	}
 
-	public void setLstActors(List<String> lstActors) {
-		this.lstActors = lstActors;
+	public void setId(int id) {
+		this.id = id;
 	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public String getActors() {
+		return actors;
+	}
+
+	public void setActors(String actors) {
+		this.actors = actors;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
 
 }
